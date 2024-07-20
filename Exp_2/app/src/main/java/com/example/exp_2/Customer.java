@@ -10,15 +10,16 @@ public class Customer {
     private String mName;
     private String mPhone;
     private String mGender;
+    private String mCountry;
 
     public Customer(){}
 
-    public Customer(long customerId, String name, String mPhone, String mGender) {
+    public Customer(long customerId, String name, String mPhone, String mGender, String mCountry) {
         this.mCustomerId = customerId;
         this.mName = name;
         this.mPhone = mPhone;
         this.mGender = mGender;
-
+        this.mCountry = mCountry;
     }
 
     public long getmCustomerId() {
@@ -53,6 +54,13 @@ public class Customer {
         this.mGender = mGender;
     }
 
+    public String getmCountry() {
+        return mCountry;
+    }
+
+    public void setmCountry(String mCountry) {
+        this.mCountry = mCountry;
+    }
 
     @Override
     public String toString() {
@@ -60,7 +68,9 @@ public class Customer {
                 "\nmCustomerId=" + mCustomerId +
                 "\n, mName='" + mName + '\'' +
                 "\n, mPhone='" + mPhone + '\'' +
-                "\n, mGender='" + mGender + '\'' + "\n}\n\n";
+                "\n, mGender='" + mGender + '\'' +
+                "\n, mCountry='" + mCountry + '\'' +
+                 "\n}\n\n";
     }
 }
 
