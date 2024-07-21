@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when button is pressed -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#9C00BCD4"/> <!-- Change this to your hover color -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00BCD4"/> <!-- Change this to your default color -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</selector>
