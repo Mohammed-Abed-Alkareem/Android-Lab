@@ -76,4 +76,15 @@
         android:text="DISPLAY A TOAST MASSAGE"
         android:textSize="20sp"
         android:textStyle="bold"  />
+
+    <Button
+        android:id="@+id/button_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="sans-serif"
+        android:text="OPEN SETTINGS"
+        android:textSize="20sp"
+        android:textStyle="bold"  />
 </LinearLayout>
