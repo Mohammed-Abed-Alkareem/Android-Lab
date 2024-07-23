@@ -1,5 +1,3 @@
-To make your README more professional, consider adding the following elements:
-
 
 # Android Development Lab Experiments
 
@@ -17,7 +15,7 @@ Welcome to the Android Development Lab Experiments repository! This repository c
 To get started with these experiments, clone the repository and open the desired experiment in Android Studio.
 
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 ```
 
 ## Experiment 1: Basic Android Application
@@ -34,29 +32,36 @@ git clone https://github.com/yourusername/your-repo.git
 
 
 ### Code
-- [MainActivity.java](Experiment1/app/src/main/java/com/example/exp1/MainActivity.java)
-- [activity_main.xml](Experiment1/app/src/main/res/layout/activity_main.xml)
-- [strings.xml](Experiment1/app/src/main/res/values/strings.xml)
+- [MainActivity.java](/Exp_1/app/src/main/java/com/example/exp_1/MainActivity.java)
+- [activity_main.xml](/Exp_1/app/src/main/res/layout/activity_main.xml)
+
 
 ## Experiment 2: Activity Lifecycle and Intents
 
 ### Objectives
-- Understand the Android Activity lifecycle.
-- Learn to switch between activities using Intents.
+- What Views, View Groups, Layouts, and Widgets are and how they relate to each other.
+- How to declare layouts dynamically at runtime.
+- Adding widgets dynamically at runtime.
+- Switching between two Activities.
+- How to use Events and Event Listeners.
 
 ### Procedure
-1. Create two activities: MainActivity and SecondActivity.
-2. Implement buttons to navigate between MainActivity and SecondActivity.
+1. Creating a Customer Model
+2. Creating new Activity (Add Customer Activity)
+3. Making the activity_add_customer Layout (statically using .xml or drag and drop)
+4. Implementing Add Customer Activity Java Class
+5. Implementing Main Activity Java class
 
 
 ### Code
-- [MainActivity.java](Experiment2/app/src/main/java/com/example/exp2/MainActivity.java)
-- [SecondActivity.java](Experiment2/app/src/main/java/com/example/exp2/SecondActivity.java)
-- [activity_main.xml](Experiment2/app/src/main/res/layout/activity_main.xml)
-- [activity_second.xml](Experiment2/app/src/main/res/layout/activity_second.xml)
-- [strings.xml](Experiment2/app/src/main/res/values/strings.xml)
+- [MainActivity.java](/Exp_2/app/src/main/java/com/example/exp_2/MainActivity.java)
+- [AddCustomerActivity.java](/Exp_2/app/src/main/java/com/example/exp_2/AddCustomerActivity.java)
+- [Customer.java](/Exp_2/app/src/main/java/com/example/exp_2/Customer.java)
+- [activity_main.xml](/Exp_2/app/src/main/res/layout/activity_main.xml)
+- [activity_add_customer.xml](/Exp_2/app/src/main/res/layout/activity_add_customer.xml)
 
-## Experiment 3: UI Components and Event Handling
+
+## Experiment 3: Using Intents and Notifications
 
 ### Objectives
 - Utilize the Intent class to implement various functionalities.
@@ -67,13 +72,19 @@ git clone https://github.com/yourusername/your-repo.git
 - Post notifications to the Notification Bar.
 
 ### Procedure
-1. C
-2. I
+1. Adding Buttons
+2. Creating Listener for each Button
+   - Create a click Listener to dial button
+   - Create a click Listener to gmail button
+   - Create a click Listener to Google Maps button
+   - Notification Creation
+   - Create a click Listener for the Toast Message button
+
 
 ### Code
-- [MainActivity.java](Experiment3/app/src/main/java/com/example/exp3/MainActivity.java)
-- [activity_main.xml](Experiment3/app/src/main/res/layout/activity_main.xml)
-- [strings.xml](Experiment3/app/src/main/res/values/strings.xml)
+- [MainActivity.java](/Exp_3/app/src/main/java/com/example/exp_3/MainActivity.java)
+- [activity_main.xml](/Exp_3/app/src/main/res/layout/activity_main.xml)
+- [button_selector.xml](/Exp_3/app/src/main/res/drawable/button_selector.xml)
 
 ## Experiment 4: SQLite Database
 
@@ -88,11 +99,12 @@ git clone https://github.com/yourusername/your-repo.git
 
 
 ### Code
-- [MainActivity.java](Experiment4/app/src/main/java/com/example/exp4/MainActivity.java)
-- [DatabaseHelper.java](Experiment4/app/src/main/java/com/example/exp4/DatabaseHelper.java)
-- [Customer.java](Experiment4/app/src/main/java/com/example/exp4/Customer.java)
-- [activity_main.xml](Experiment4/app/src/main/res/layout/activity_main.xml)
-- [strings.xml](Experiment4/app/src/main/res/values/strings.xml)
+- [MainActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/MainActivity.java)
+- [AddCustomerActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/AddCustomerActivity.java)
+- [Customer.java](Exp_4/app/src/main/java/com/example/exp_2/Customer.java)
+- [Customer.java](/Exp_4/app/src/main/java/com/example/exp_2/DataBaseHelper.java)
+- [activity_main.xml](/Exp_4/app/src/main/res/layout/activity_main.xml)
+- [activity_add_customer.xml](/Exp_4/app/src/main/res/layout/activity_add_customer.xml)
 
 
 ## License
