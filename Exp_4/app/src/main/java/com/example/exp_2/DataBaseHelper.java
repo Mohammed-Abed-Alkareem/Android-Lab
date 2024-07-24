@@ -54,6 +54,7 @@ public class DataBaseHelper extends android.database.sqlite.SQLiteOpenHelper {
             values.put("PHONE", customer.getmPhone());
             values.put("GENDER", customer.getmGender());
             values.put("COUNTRY", customer.getmCountry());
+
             sqLiteDatabase.insertOrThrow("CUSTOMER", null, values); // Insert the customer data into the CUSTOMER table
         } catch (SQLiteConstraintException e) {
             throw e; // Re-throw the SQLiteConstraintException to be caught in the calling activity
@@ -80,4 +81,21 @@ public class DataBaseHelper extends android.database.sqlite.SQLiteOpenHelper {
         }
         return cursor;
     }
+
+    // todo code
+    public Cursor getCustomerByFirstLetter(char firstLetter){
+        SQLiteDatabase sqLiteDatabase = null;
+        Cursor cursor = null;
+        String query = "SELECT * FROM CUSTOMER WHERE NAME LIKE '" + firstLetter + "%'";
+        try {
+            sqLiteDatabase = this.getReadableDatabase();
+            cursor = sqLiteDatabase.rawQuery(query, null);
+        } catch (SQLException e) {
+            // Show a Toast message if there is an error getting all customers
+            Toast.makeText(context, "Error getting customers starting with "+ firstLetter + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+        return cursor;
+    }
+
+
 }

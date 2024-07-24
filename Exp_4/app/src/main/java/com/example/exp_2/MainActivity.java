@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,23 +65,65 @@ public class MainActivity extends AppCompatActivity {
         Cursor allCustomersCursor = dataBaseHelper.getAllCustomers();
         secondLinearLayout.removeAllViews();
 
+        /////todo//////////////
+        Cursor letterCustomersCursor = dataBaseHelper.getCustomerByFirstLetter('B');
+
+        TextView textViewCustomer = new TextView(MainActivity.this);
+
+        textViewCustomer.setPadding(20, 20, 20, 20); // Add padding to TextView
+        LinearLayout.LayoutParams textViewLayoutParamsCustomer = new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        );
+        textViewLayoutParamsCustomer.setMargins(10, 10, 10, 10); // Add margins around TextView
+        textViewCustomer.setLayoutParams(textViewLayoutParamsCustomer);
+        textViewCustomer.setBackgroundColor(getResources().getColor(android.R.color.darker_gray)); // Set background color
+        textViewCustomer.setTextColor(getResources().getColor(android.R.color.white)); // Set text color
+
+        if (letterCustomersCursor != null) {
+            try {
+                if (letterCustomersCursor.moveToLast()) {
+                    int index = letterCustomersCursor.getColumnIndex("PHONE");
+                    if (index != -1) {
+                        String customerPhone = letterCustomersCursor.getString(index);
+                        textViewCustomer.setText("ToDo: \n"+"Phone: " + customerPhone);
+                    }
+                    else {
+                        textViewCustomer.setText("Column 'PHONE' not found");
+                    }
+                }
+                else {
+                    textViewCustomer.setText("No customers found starting with B");
+                }
+            }
+            catch (Exception e) {
+                Toast.makeText(MainActivity.this, "Error getting customers starting with B: " + e.getMessage(), Toast.LENGTH_LONG).show();
+            } finally {
+                letterCustomersCursor.close();
+            }
+        } else {
+            textViewCustomer.setText("No customers found");
+        }
+
+        secondLinearLayout.addView(textViewCustomer);
+
+
+        ///////////////////////////
+
         if (allCustomersCursor != null) {
-            Log.d(TAG, "Customer count: " + allCustomersCursor.getCount());
+
             try {
                 while (allCustomersCursor.moveToNext()) {
                     String customerId = allCustomersCursor.getString(0);
                     String customerName = allCustomersCursor.getString(1);
                     String customerPhone = allCustomersCursor.getString(2);
                     String customerGender = allCustomersCursor.getString(3);
+                    String customerCountry = allCustomersCursor.getString(4);
 
-                    Log.d(TAG, "Customer ID: " + customerId);
-                    Log.d(TAG, "Customer Name: " + customerName);
-                    Log.d(TAG, "Customer Phone: " + customerPhone);
-                    Log.d(TAG, "Customer Gender: " + customerGender);
 
                     // Style each TextView for customer details
                     TextView textView = new TextView(MainActivity.this);
-                    textView.setText("Id: " + customerId + "\nName: " + customerName + "\nPhone: " + customerPhone + "\nGender: " + customerGender);
+                    textView.setText("Id: " + customerId + "\nName: " + customerName + "\nPhone: " + customerPhone + "\nGender: " + customerGender + "\nCountry: " + customerCountry);
                     textView.setPadding(20, 20, 20, 20); // Add padding to TextView
                     LinearLayout.LayoutParams textViewLayoutParams = new LinearLayout.LayoutParams(
                             ViewGroup.LayoutParams.MATCH_PARENT,
@@ -96,8 +139,6 @@ public class MainActivity extends AppCompatActivity {
             } finally {
                 allCustomersCursor.close();
             }
-        } else {
-            Log.d(TAG, "Cursor is null");
         }
     }
 }

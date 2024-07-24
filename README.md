@@ -1,7 +1,7 @@
 
 # Android Development Lab Experiments
 
-Welcome to the Android Development Lab Experiments repository! This repository contains a series of experiments designed to cover various aspects of Android app development. Each experiment is intended to help you understand core Android concepts and practices.
+This repository contains experiments from the **Birzeit University course ENCS5150: Advanced Computer Systems Engineering Laboratory**. The experiments are designed to explore key aspects of Android app development, offering practical experience with essential concepts and techniques.
 
 ## Table of Contents
 
