@@ -131,7 +131,6 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 #### Frame animation application
 - [MainActivity.java](/Exp_5/Exp_5.1/app/src/main/java/com/example/frameanimationapplication/MainActivity.java)
 - [activity_main.xml](/Exp_5/Exp_5.1/app/src/main/res/layout/activity_main.xml)
-- 
 - [animation.xml](/Exp_5/Exp_5.1/app/src/main/res/drawable/animation.xml)
 
 
@@ -139,7 +138,6 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 - [MainActivity.java](/Exp_5/Exp_5.2/app/src/main/java/com/example/tweenanimationapplication/MainActivity.java)
 - [activity_main.xml](/Exp_5/Exp_5.2/app/src/main/res/layout/activity_main.xml)
-- 
 - [rotate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/rotate.xml)
 - [scale.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/scale.xml)
 - [translate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/translate.xml)
