@@ -9,6 +9,8 @@ This repository contains experiments from the **Birzeit University course ENCS51
 2. [Experiment 2: Activity Lifecycle and Intents](#experiment-2-activity-lifecycle-and-intents)
 3. [Experiment 3: Using Intents and Notifications](#experiment-3-using-intents-and-notifications)
 4. [Experiment 4: SQLite Database](#experiment-4-sqlite-database)
+5. [Experiment 5: Frame Animation and Tween Animation](#experiment-5-frame-animation-and-tween-animation)
+
 
 ## Getting Started
 
@@ -102,9 +104,43 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [MainActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/MainActivity.java)
 - [AddCustomerActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/AddCustomerActivity.java)
 - [Customer.java](Exp_4/app/src/main/java/com/example/exp_2/Customer.java)
-- [Customer.java](/Exp_4/app/src/main/java/com/example/exp_2/DataBaseHelper.java)
+- [DataBaseHelper.java](/Exp_4/app/src/main/java/com/example/exp_2/DataBaseHelper.java)
 - [activity_main.xml](/Exp_4/app/src/main/res/layout/activity_main.xml)
 - [activity_add_customer.xml](/Exp_4/app/src/main/res/layout/activity_add_customer.xml)
+
+
+## Experiment 5: Frame Animation and Tween Animation
+
+### Objectives
+- Understand how to use Frame animation and Tween animation in Android.
+- Learn attributes of translate, rotate, and scale tags.
+- Familiarize with the Animation Class.
+
+### Procedure
+1. Create a Frame animation application.
+   - Import several images into the `res/drawable` folder.
+   - Define an XML Drawable for the animation.
+   - Add a button and an image view in the activity_main layout.
+   - Implement transition animation between images using `TransitionDrawable`.
+2. Create a Tween animation application.
+   - Add an image to the `res/drawable` folder.
+   - Create animation resource files for rotate, scale, and translate animations.
+   - Implement animations in the main activity using `AnimationUtils`.
+
+### Code
+#### Frame animation application
+- [MainActivity.java](/Exp_5/Exp_5.1/app/src/main/java/com/example/frameanimationapplication/MainActivity.java)
+- [activity_main.xml](/Exp_5/Exp_5.1/app/src/main/res/layout/activity_main.xml)
+- [animation.xml](/Exp_5/Exp_5.1/app/src/main/res/drawable/animation.xml)
+
+
+#### Tween animation application
+
+- [MainActivity.java](/Exp_5/Exp_5.2/app/src/main/java/com/example/tweenanimationapplication/MainActivity.java)
+- [activity_main.xml](/Exp_5/Exp_5.2/app/src/main/res/layout/activity_main.xml)
+- [rotate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/rotate.xml)
+- [scale.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/scale.xml)
+- [translate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/translate.xml)
 
 
 ## License
