@@ -10,6 +10,7 @@ This repository contains experiments from the **Birzeit University course ENCS51
 3. [Experiment 3: Using Intents and Notifications](#experiment-3-using-intents-and-notifications)
 4. [Experiment 4: SQLite Database](#experiment-4-sqlite-database)
 5. [Experiment 5: Frame Animation and Tween Animation](#experiment-5-frame-animation-and-tween-animation)
+6. [Experiment 6: Singleton and Shared Preferences](#experiment-6-singleton-and-shared-preferences)
 
 
 ## Getting Started
@@ -142,6 +143,37 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [scale.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/scale.xml)
 - [translate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/translate.xml)
 
+
+
+## Experiment 6: Singleton and Shared Preferences
+
+### Objectives
+- Gain knowledge of shared preferences in Android.
+- Introduce the concept of singleton classes in Java.
+- Learn how to save and retrieve various data types (strings, integers, long, Boolean) locally on the device using shared preferences.
+
+### Procedure
+
+
+1. **Creating a Singleton Class**
+   - Implement a singleton class called `SharedPrefManager` to handle shared preferences.
+   - Define methods to write and read strings from shared preferences.
+
+2. **Building the MainActivity Layout and Java Class**
+   - Design a layout with `EditText` for username and password, and `Button` for saving data and navigating to the second activity.
+   - Use `SharedPrefManager` to save the values in shared preferences.
+
+3. **Building the SecondActivity Layout and Java Class**
+   - Design a layout with `TextView` for displaying username and password, and `Button` for loading data and navigating back to the main activity.
+   - Use `SharedPrefManager` to read values from shared preferences.
+
+### Code
+
+- [MainActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/MainActivity.java)
+- [SecondActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SecondActivity.java)
+- [SharedPrefManager.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SharedPrefManager.java)
+- [activity_main.xml](/Exp_6/app/src/main/res/layout/activity_main.xml)
+- [second_activity.xml](/Exp_6/app/src/main/res/layout/second_activity.xml)
 
 ## License
 
