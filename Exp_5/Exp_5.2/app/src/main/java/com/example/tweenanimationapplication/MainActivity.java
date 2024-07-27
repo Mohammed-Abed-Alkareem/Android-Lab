@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Button buttonRotate = findViewById(R.id.button_rotate);
         Button buttonScale = findViewById(R.id.button_scale);
         Button buttonTranslate = findViewById(R.id.button_translate);
+        Button buttonOpacity = findViewById(R.id.button_opacity);
+        Button buttonCustom = findViewById(R.id.button_custom);
+        Button buttonTodo = findViewById(R.id.button_todo);
+
         final ImageView imageView = (ImageView) findViewById(R.id.imageView);
 
         buttonRotate.setOnClickListener(new View.OnClickListener() {
@@ -47,8 +51,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonOpacity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.opacity));
+            }
+        });
+
+        buttonCustom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.custom));
+            }
+        });
 
 
+        buttonTodo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageView.startAnimation(AnimationUtils.loadAnimation(MainActivity.this,R.anim.todo));
+            }
+        });
 
 
 

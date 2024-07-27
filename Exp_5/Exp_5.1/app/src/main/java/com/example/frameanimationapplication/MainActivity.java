@@ -13,8 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    boolean isOn = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,14 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         button.setOnClickListener(v -> {
             TransitionDrawable transitionDrawable = (TransitionDrawable) imageView.getDrawable();
-            if (isOn) {
                 transitionDrawable.reverseTransition(1000);
-                isOn = false;
-            } else {
-                transitionDrawable.startTransition(1000);
-                isOn = true;
-            }
-
         });
 
 
