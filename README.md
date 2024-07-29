@@ -172,8 +172,12 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [MainActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/MainActivity.java)
 - [SecondActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SecondActivity.java)
 - [SharedPrefManager.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SharedPrefManager.java)
+- [Hash.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/Hash.java)
+- [LoginActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/LoginActivity.java)
 - [activity_main.xml](/Exp_6/app/src/main/res/layout/activity_main.xml)
 - [second_activity.xml](/Exp_6/app/src/main/res/layout/second_activity.xml)
+- [login_activity.java](/Exp_6/app/src/main/res/layout/login_activity.xml)
+
 
 ## License
 
