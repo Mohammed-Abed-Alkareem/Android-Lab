@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
     EditText editTextPassword;
     Button buttonSave;
     Button buttonGoToSecondActivity;
+    Button buttonGoToLoginActivity;
     SharedPrefManager sharedPrefManager;
+    Intent intent1;
     Intent intent;
 
 
@@ -31,12 +33,14 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editText_password);
         buttonSave = (Button) findViewById(R.id.buttonSave);
         buttonGoToSecondActivity = (Button) findViewById(R.id.buttonGoToSecondActivity);
+        buttonGoToLoginActivity = (Button) findViewById(R.id.buttonToLogin);
         sharedPrefManager =SharedPrefManager.getInstance(this);
         intent = new Intent(MainActivity.this,SecondActivity.class);
+        intent1 = new Intent(MainActivity.this,LoginActivity.class);
 
         buttonSave.setOnClickListener(v -> {
             sharedPrefManager.writeString("userName",editTextUserName.getText().toString());
-            sharedPrefManager.writeString("password",editTextPassword.getText().toString());
+            sharedPrefManager.writeString("password",Hash.hashPassword(editTextPassword.getText().toString()));
             Toast.makeText(MainActivity.this, "Values written to shared Preferences", Toast.LENGTH_SHORT).show();
         });
 
@@ -44,5 +48,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+
+        buttonGoToLoginActivity.setOnClickListener(v -> {
+            startActivity(intent1);
+            finish();
+        });
+
     }
 }

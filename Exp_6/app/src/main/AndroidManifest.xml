@@ -26,6 +26,11 @@
             android:name=".SecondActivity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
