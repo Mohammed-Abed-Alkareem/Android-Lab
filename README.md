@@ -12,6 +12,10 @@ This repository contains experiments from the **Birzeit University course ENCS51
 5. [Experiment 5: Frame Animation and Tween Animation](#experiment-5-frame-animation-and-tween-animation)
 6. [Experiment 6: Singleton and Shared Preferences](#experiment-6-singleton-and-shared-preferences)
 7. [Experiment 7: Fragments](#experiment-7-fragments)
+8. [Experiment 8: Integrating REST API into Android Application](#experiment-8-integrating-rest-api-into-android-application)
+9. [Experiment 9: Spring Boot Part 1](#experiment-9-spring-boot-part-1)
+10. [Experiment 10: Spring Boot Part 2](#experiment-10-spring-boot-part-2)
+
 
 
 ## Getting Started
@@ -305,6 +309,45 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 
+
+## Experiment 10: Spring Boot Part 2
+
+
+### Objectives
+- Understand the fundamentals of the **Spring Data JPA** framework.
+- Learn to create mappings between Java models and relational database models.
+- Connect and perform CRUD operations on a MySQL database using Spring Data JPA.
+
+
+### Procedure
+
+1. Configurations
+- **Application Properties:** Set configurations in `src/main/resources/application.properties`:
+
+
+2. ORM Mapping
+- **User Class:** Define a User entity and map it to a `users` table:
+
+
+- **JPA Repositories:** Create a repository interface for the User entity:
+
+- **Service Layer:** Inject the repository into the service layer:
+
+
+- **Controller Layer:** Create a REST API controller to interact with the service:
+
+3. Extra Features
+- **Delete User:** Implement a delete operation:
+
+
+
+### Code
+- [DemoApplication.java](/Exp_10/demo/demo/src/main/java/com/example/demo/DemoApplication.java)
+- [UserController.java](/Exp_10/demo/demo/src/main/java/com/example/demo/controllers/UserController.java)
+- [User.java](/Exp_10/demo/demo/src/main/java/com/example/demo/models)
+- [UserRepository.java](/Exp_10/demo/demo/src/main/java/com/example/demo/repositories/UserRepository.java)
+- [UserService.java](/Exp_10/demo/demo/src/main/java/com/example/demo/services/UserService.java)
+- [application.properties](/Exp_10/demo/demo/src/main/resources/application.properties)
 
 ## License
 
