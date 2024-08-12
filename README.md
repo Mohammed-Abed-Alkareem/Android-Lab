@@ -223,6 +223,59 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [fragment_second.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/fragment_second.xml)
 
 
+
+## Experiment 8: Integrating REST APIs into Android Applications
+
+### Objectives
+- Learn how to integrate Android applications with RESTful web services.
+- Understand how to make GET and POST requests to a REST API.
+- Learn to parse JSON responses and display the data in the UI.
+
+### Procedure
+1. **Designing the User Interface (UI)**
+   - Use `ConstraintLayout` to design the main activity layout.
+   - Add necessary UI components like `TextView`, `EditText`, `Button`, and `RecyclerView` to display the data fetched from the API.
+
+2. **Creating the Model Class**
+   - Create a model class `Student` to represent the data fetched from the API.
+   - Define properties like `id`, `name`, and `grade` along with their getter and setter methods.
+
+3. **Implementing the JSON Parser Class**
+   - Create a class `StudentJsonParser` that handles the parsing of JSON data into `Student` objects.
+   - Use `JSONObject` and `JSONArray` to parse the JSON structure returned by the API.
+
+4. **Implementing the HTTP Manager Class**
+   - Create a class `HttpManager` to manage the network requests.
+   - Use `HttpURLConnection` to establish a connection and make GET/POST requests.
+   - Handle input/output streams to read the server’s response.
+
+5. **Using `AsyncTask` for Network Operations**
+   - Implement an `AsyncTask` subclass to perform network operations in the background.
+   - Use the `doInBackground` method to make the API calls.
+   - Update the UI with the fetched data in the `onPostExecute` method.
+
+6. **Implementing the Main Activity**
+   - Implement `MainActivity.java` to handle user interactions like button clicks.
+   - Make API requests using the `HttpManager` and display the data in the `RecyclerView`.
+   - Handle UI updates and display the data parsed by `StudentJsonParser`.
+
+7. **Configuring Permissions and Network Security**
+   - Add necessary permissions like `INTERNET` in the Android manifest file.
+   - Configure network security policies to allow HTTP requests if required.
+
+### Code
+- [MainActivity.java](/Exp_8/app/src/main/java/com/example/exp_8/MainActivity.java)
+- [Student.java](/Exp_8/app/src/main/java/com/example/exp_8/Student.java)
+- [StudentJsonParser.java](/Exp_8/app/src/main/java/com/example/exp_8/StudentJsonParser.java)
+- [HttpManager.java](/Exp_8/app/src/main/java/com/example/exp_8/HttpManager.java)
+- [activity_main.xml](/Exp_8/app/src/main/res/layout)
+- [network_security_config.xml](/Exp_8/app/src/main/res/xml/network_security_config.xml)
+
+
+
+
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
