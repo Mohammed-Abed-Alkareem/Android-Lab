@@ -11,6 +11,7 @@ This repository contains experiments from the **Birzeit University course ENCS51
 4. [Experiment 4: SQLite Database](#experiment-4-sqlite-database)
 5. [Experiment 5: Frame Animation and Tween Animation](#experiment-5-frame-animation-and-tween-animation)
 6. [Experiment 6: Singleton and Shared Preferences](#experiment-6-singleton-and-shared-preferences)
+7. [Experiment 7: Fragments](#experiment-7-fragments)
 
 
 ## Getting Started
@@ -177,6 +178,49 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [activity_main.xml](/Exp_6/app/src/main/res/layout/activity_main.xml)
 - [second_activity.xml](/Exp_6/app/src/main/res/layout/second_activity.xml)
 - [login_activity.java](/Exp_6/app/src/main/res/layout/login_activity.xml)
+
+
+
+## Experiment 7: Fragments
+
+### Objectives
+1. **Introduce a New Concept in Android Applications:**
+
+- Learn about the concept of Fragments in Android and how they can be utilized to build more efficient and modular applications.
+
+2. **Simplify Code and Reduce Latency Time:**
+   
+- Understand how Fragments help in simplifying the application’s code structure and reducing latency by enabling efficient UI design, especially for devices with larger screens.
+### Procedure
+1. **Create a Fragments Communication Application**.
+   - Create an app with two fragments (FirstFragment and SecondFragment).
+   - FirstFragment sends a string to SecondFragment indicating how many times a button has been clicked.
+   - Implement communication via an interface defined in SecondFragment.
+     
+2. **Create a Fragments Transaction Application**.
+   - Create an app that demonstrates adding, removing, attaching, detaching, and replacing fragments dynamically.
+
+
+### Code
+
+#### Fragments Communication Application
+- [MainActivity.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/MainActivity.java)
+- [FirstFragment.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/FirstFragment.java)
+- [SecondFragment.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/SecondFragment.java)
+- [activity_main.xml](/Exp_7/Exp_7.1/app/src/main/res/layout/activity_main.xml)
+- [fragment_first.xml](/Exp_7/Exp_7.1/app/src/main/res/layout/fragment_first.xml)
+- [fragment_second.xml](/Exp_7/Exp_7.1/app/src/main/res/layout/fragment_second.xml)
+
+
+
+#### Fragments Transaction Application
+
+- [MainActivity.java](/Exp_7/Exp_7.2/app/src/main/java/com/example/fragmentscommunicationapplication/MainActivity.java)
+- [FirstFragment.java](/Exp_7/Exp_7.2/app/src/main/java/com/example/fragmentscommunicationapplication/FirstFragment.java)
+- [SecondFragment.java](/Exp_7/Exp_7.2/app/src/main/java/com/example/fragmentscommunicationapplication/SecondFragment.java)
+- [activity_main.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/activity_main.xml)
+- [fragment_first.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/fragment_first.xml)
+- [fragment_second.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/fragment_second.xml)
 
 
 ## License
