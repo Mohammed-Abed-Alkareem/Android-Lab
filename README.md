@@ -224,7 +224,7 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 
-## Experiment 8: Integrating REST APIs into Android Applications
+## Experiment 8: Integrating REST API into Android Application
 
 ### Objectives
 - Learn how to integrate Android applications with RESTful web services.
@@ -259,18 +259,48 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
    - Make API requests using the `HttpManager` and display the data in the `RecyclerView`.
    - Handle UI updates and display the data parsed by `StudentJsonParser`.
 
-7. **Configuring Permissions and Network Security**
+7. **Configuring Permissions**
    - Add necessary permissions like `INTERNET` in the Android manifest file.
-   - Configure network security policies to allow HTTP requests if required.
 
 ### Code
-- [MainActivity.java](/Exp_8/app/src/main/java/com/example/exp_8/MainActivity.java)
-- [Student.java](/Exp_8/app/src/main/java/com/example/exp_8/Student.java)
-- [StudentJsonParser.java](/Exp_8/app/src/main/java/com/example/exp_8/StudentJsonParser.java)
-- [HttpManager.java](/Exp_8/app/src/main/java/com/example/exp_8/HttpManager.java)
+- [MainActivity.java](/Exp_8/app/src/main/java/com/example/restapplication/MainActivity.java)
+- [Student.java](/Exp_8/app/src/main/java/com/example/restapplication/Student.java)
+- [StudentJsonParser.java](/Exp_8/app/src/main/java/com/example/restapplication/StudentJsonParser.java)
+- [HttpManager.java](/Exp_8/app/src/main/java/com/example/restapplication/HttpManager.java)
+- [ConnectionAsyncTask.java](/Exp_8/app/src/main/java/com/example/restapplication/ConnectionAsyncTask.java)
 - [activity_main.xml](/Exp_8/app/src/main/res/layout)
-- [network_security_config.xml](/Exp_8/app/src/main/res/xml/network_security_config.xml)
 
+
+
+
+## Experiment 9: Spring Boot Part 1
+
+### Objectives
+- Understand the fundamentals of Spring Boot for building RESTful web services.
+- Learn to set up a Spring Boot project and configure the necessary dependencies.
+- Develop REST APIs to handle CRUD operations.
+- Test the REST APIs using Postman or similar tools.
+
+### Procedure
+1. **Setting Up the Spring Boot Project**
+   - Use Spring Initializr to create a new Spring Boot project.
+   - Add dependencies such as Spring Web, Spring Data JPA, and H2 Database.
+   - Import the project into your preferred IDE.
+  
+2. **Create Project Structure**
+- creating packages under the demo package calling them (Controllers, Services and Models)
+
+3. **Testing**
+- Run the Spring Boot application. Use Postman or a similar tool to send requests to the API endpoints.
+
+
+
+
+### Code
+- [DemoApplication.java](/Exp_9/demo/demo/src/main/java/com/example/demo/DemoApplication.java)
+- [UserController.java](/Exp_9/demo/demo/src/main/java/com/example/demo/controllers/UserController.java)
+- [User.java](/Exp_9/demo/demo/src/main/java/com/example/demo/models/User.java)
+- [UserService.java](/Exp_9/demo/demo/src/main/java/com/example/demo/services/UserService.java)
 
 
 
