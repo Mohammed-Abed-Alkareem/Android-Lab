@@ -40,8 +40,14 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
-- [MainActivity.java](/Exp_1/app/src/main/java/com/example/exp_1/MainActivity.java)
-- [activity_main.xml](/Exp_1/app/src/main/res/layout/activity_main.xml)
+<details>
+  <summary>Experiment 1 Code</summary>
+
+  - [MainActivity.java](Exp_1/app/src/main/java/com/example/exp_1/MainActivity.java)
+  - [activity_main.xml](Exp_1/app/src/main/res/layout/activity_main.xml)
+
+</details>
+
 
 
 ## Experiment 2: Activity Lifecycle and Intents
@@ -62,12 +68,16 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
+
+<details>
+  <summary>Experiment 2 Code</summary>
+   
 - [MainActivity.java](/Exp_2/app/src/main/java/com/example/exp_2/MainActivity.java)
 - [AddCustomerActivity.java](/Exp_2/app/src/main/java/com/example/exp_2/AddCustomerActivity.java)
 - [Customer.java](/Exp_2/app/src/main/java/com/example/exp_2/Customer.java)
 - [activity_main.xml](/Exp_2/app/src/main/res/layout/activity_main.xml)
 - [activity_add_customer.xml](/Exp_2/app/src/main/res/layout/activity_add_customer.xml)
-
+</details>
 
 ## Experiment 3: Using Intents and Notifications
 
@@ -90,9 +100,13 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
+
+<details>
+  <summary>Experiment 3 Code</summary>
 - [MainActivity.java](/Exp_3/app/src/main/java/com/example/exp_3/MainActivity.java)
 - [activity_main.xml](/Exp_3/app/src/main/res/layout/activity_main.xml)
 - [button_selector.xml](/Exp_3/app/src/main/res/drawable/button_selector.xml)
+</details>
 
 ## Experiment 4: SQLite Database
 
@@ -107,13 +121,18 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
+
+
+<details>
+  <summary>Experiment 4 Code</summary>
+   
 - [MainActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/MainActivity.java)
 - [AddCustomerActivity.java](/Exp_4/app/src/main/java/com/example/exp_2/AddCustomerActivity.java)
 - [Customer.java](Exp_4/app/src/main/java/com/example/exp_2/Customer.java)
 - [DataBaseHelper.java](/Exp_4/app/src/main/java/com/example/exp_2/DataBaseHelper.java)
 - [activity_main.xml](/Exp_4/app/src/main/res/layout/activity_main.xml)
 - [activity_add_customer.xml](/Exp_4/app/src/main/res/layout/activity_add_customer.xml)
-
+</details>
 
 ## Experiment 5: Frame Animation and Tween Animation
 
@@ -134,7 +153,11 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
    - Implement animations in the main activity using `AnimationUtils`.
 
 ### Code
+<details>
+  <summary>Experiment Code</summary>
+   
 #### Frame animation application
+
 - [MainActivity.java](/Exp_5/Exp_5.1/app/src/main/java/com/example/frameanimationapplication/MainActivity.java)
 - [activity_main.xml](/Exp_5/Exp_5.1/app/src/main/res/layout/activity_main.xml)
 - [animation.xml](/Exp_5/Exp_5.1/app/src/main/res/drawable/animation.xml)
@@ -147,7 +170,7 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [rotate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/rotate.xml)
 - [scale.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/scale.xml)
 - [translate.xml](/Exp_5/Exp_5.2/app/src/main/res/anim/translate.xml)
-
+</details>
 
 
 ## Experiment 6: Singleton and Shared Preferences
@@ -173,7 +196,9 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
    - Use `SharedPrefManager` to read values from shared preferences.
 
 ### Code
-
+<details>
+  <summary>Experiment 6 Code</summary>
+   
 - [MainActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/MainActivity.java)
 - [SecondActivity.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SecondActivity.java)
 - [SharedPrefManager.java](/Exp_6/app/src/main/java/com/example/sharedpreferencesapplication/SharedPrefManager.java)
@@ -183,7 +208,7 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [second_activity.xml](/Exp_6/app/src/main/res/layout/second_activity.xml)
 - [login_activity.java](/Exp_6/app/src/main/res/layout/login_activity.xml)
 
-
+</details>
 
 ## Experiment 7: Fragments
 
@@ -207,7 +232,11 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 ### Code
 
+<details>
+  <summary>Experiment 7 Code</summary>
+
 #### Fragments Communication Application
+
 - [MainActivity.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/MainActivity.java)
 - [FirstFragment.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/FirstFragment.java)
 - [SecondFragment.java](/Exp_7/Exp_7.1/app/src/main/java/com/example/fragmentscommunicationapplication/SecondFragment.java)
@@ -225,7 +254,7 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 - [activity_main.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/activity_main.xml)
 - [fragment_first.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/fragment_first.xml)
 - [fragment_second.xml](/Exp_7/Exp_7.2/app/src/main/res/layout/fragment_second.xml)
-
+</details>
 
 
 ## Experiment 8: Integrating REST API into Android Application
@@ -267,13 +296,16 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
    - Add necessary permissions like `INTERNET` in the Android manifest file.
 
 ### Code
+<details>
+  <summary>Experiment 8 Code</summary>
+   
 - [MainActivity.java](/Exp_8/app/src/main/java/com/example/restapplication/MainActivity.java)
 - [Student.java](/Exp_8/app/src/main/java/com/example/restapplication/Student.java)
 - [StudentJsonParser.java](/Exp_8/app/src/main/java/com/example/restapplication/StudentJsonParser.java)
 - [HttpManager.java](/Exp_8/app/src/main/java/com/example/restapplication/HttpManager.java)
 - [ConnectionAsyncTask.java](/Exp_8/app/src/main/java/com/example/restapplication/ConnectionAsyncTask.java)
 - [activity_main.xml](/Exp_8/app/src/main/res/layout)
-
+</details>
 
 
 
@@ -301,11 +333,14 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
+<details>
+  <summary>Experiment 9 Code</summary>
+   
 - [DemoApplication.java](/Exp_9/demo/demo/src/main/java/com/example/demo/DemoApplication.java)
 - [UserController.java](/Exp_9/demo/demo/src/main/java/com/example/demo/controllers/UserController.java)
 - [User.java](/Exp_9/demo/demo/src/main/java/com/example/demo/models/User.java)
 - [UserService.java](/Exp_9/demo/demo/src/main/java/com/example/demo/services/UserService.java)
-
+</details>
 
 
 
@@ -342,13 +377,16 @@ git clone https://github.com/Mohammed-Abed-Alkareem/Android-Lab.git
 
 
 ### Code
+<details>
+  <summary>Experiment 10 Code</summary>
+   
 - [DemoApplication.java](/Exp_10/demo/demo/src/main/java/com/example/demo/DemoApplication.java)
 - [UserController.java](/Exp_10/demo/demo/src/main/java/com/example/demo/controllers/UserController.java)
 - [User.java](/Exp_10/demo/demo/src/main/java/com/example/demo/models)
 - [UserRepository.java](/Exp_10/demo/demo/src/main/java/com/example/demo/repositories/UserRepository.java)
 - [UserService.java](/Exp_10/demo/demo/src/main/java/com/example/demo/services/UserService.java)
 - [application.properties](/Exp_10/demo/demo/src/main/resources/application.properties)
-
+</details>
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
